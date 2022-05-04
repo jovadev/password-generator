@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A password generator">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="jova-favicon.ico" type="image/x-icon">
+    <title>Password generator</title>
+</head>
+<body>
+    <header>
+        <div id="container_title">
+            <div id="title_img"><img src="key-icon-ico.ico" alt="key" ></div>
+            <div id="title"><h1>Password generator</h1></div>
+        </div>
+        <div id="container_mode">
+            <div class="mode_out"><div id="btn_change_mode" class="mode_in"></div></div>
+        </div>
+    </header>
+    <section id="main">
+        <main id="form-container">
+            <section>
+                <div class="row new-pass-container">
+                    <label >New password:</label>
+                    <label id="new_password"></label>
+                </div>
+                <div class="row">
+                    Select the options to generate the password:
+                </div>
+                <div class="row pass-length">
+                    <label >Password length:</label>
+                    <input type="number" id="pass-length" max="32" min="6" value="6">
+                </div>
+                <div class="row">
+                    <label >Include numbers:</label>
+                    <input type="checkbox" value="numbers" name="options" checked>
+                </div>
+                <div class="row">
+                    <label >Include symbols (#$%&*[{]}/!+):</label>
+                    <input type="checkbox" value="symbols" name="options">
+                </div>
+                <div class="row">
+                    <label >Include lowercase characters:</label>
+                    <input type="checkbox" value="lowercase" name="options">
+                </div>
+                <div class="row">
+                    <label >Include UPPERCASE characters:</label>
+                    <input type="checkbox" value="uppercase" name="options">
+                </div>
+                <div class="row buttons-container">
+                    <button class="btn" type="button" id="btn_getpass">Get password</button>
+                    <button class="btn" type="button" id="btn_copypass">Copy <span id="copy_success"></span></button>
+                </div>
+            </section>
+            <div class="container_error" id="container_error"></div>
+        </main>
+    </section>
+
+
+    <footer>
+        <div>
+            <p>&copy; 2022  Developed by: jova.dev</p>
+        </div>
+        <div class="social">
+            <label>Github: </label>
+            <label><a class="" href="https://github.com/jovadev"> <img src="github-logo-icon.ico" alt="github"></a> </label>
+        </div>
+        
+    </footer>
+    <script src="getpass.js"></script>
+</body>
+</html>
